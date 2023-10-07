@@ -206,3 +206,125 @@ a{
   align-items: center;
   border-radius: 8px;
 }
+
+/* ----------------- profile ----------------- */
+.card {
+  border: 1px solid #d3a5a5;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 20px;
+  width:95%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 ;
+}
+
+.card h1, .card p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.card input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: #d3d3d3;
+}
+
+
+.button-container {
+  text-align: center;
+}
+
+ button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px; /* Add margin to separate the buttons */
+}
+.h-increase{
+  height:18%;
+  
+  
+}
+
+.right-aligned-btn{
+  float:right;
+}
+ul {
+  text-align: left; /* Center-align the entire list */
+}
+
+ul li {
+  display: block;
+  text-align: center; /* Reset text alignment for list items */
+}
+footer {
+  background-color: #007BFF; /* Replace with your desired background color */
+  color: #fff; /* Text color for the footer */
+  text-align: center; /* Center-align text within the footer */
+  padding: 10px 0; /* Add padding for spacing */
+  border: 1px solid #007BFF;
+  border-radius: 4px;
+  position: fixed; /* Fix the footer position */
+  bottom: 0;
+  width:58%
+}
+.h2-align{
+  text-align:center;
+  color: #007BFF;
+}
+.left-align{
+  text-align:left;
+}
+
+.center-align{
+  text-align: left ; 
+}
+
+#saveButton {
+  background-color:  #007BFF;
+  color:white; 
+  cursor: not-allowed; 
+opacity: 0.5;
+}
+
+.incident-container {
+  display: inline-block;
+  width: 350px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-right: 50px;
+}
+
+/* Style for the input fields */
+.incident-input {
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Style for buttons */
+.btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.save-btn {
+  background-color: #28A745;
+  color: #fff;
+}
