@@ -21,6 +21,9 @@ input{
 a{
   text-decoration: none;
 }
+.blank{
+  display: none;
+}
 .App{
   width: 100vw;
   height: 100vh;
@@ -129,18 +132,21 @@ a{
 .alertbarHeader{
     text-align: center;
     width: 100%;
-    height: 40px;
-    padding-top: 10px;
+    height: 60px;
     color: #363636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
 }
 .alertinfoWrapper{
   width: 100%;
-  height: calc(50vh - 50px);
+  height: calc(50vh - 55px);
   margin-top: 5px;
 }
 .alertmapWrapper{
   width: calc(100% - 20px);
-  height: calc(50vh - 50px);
+  height: calc(50vh - 55px);
   margin-top: 10px;
   border: #d3d3d3 solid 2px;
   border-radius: 8px;
@@ -181,6 +187,11 @@ a{
   font-size: 20px;
   background-color: #d3d3d3;
 }
+.boxWrapper{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 .box{
   width: calc(33.7% - 10px);
   height: 250px;
@@ -188,12 +199,77 @@ a{
   border-radius: 8px;
   margin: 0px;
 }
-.boxWrapper{
-  display: flex;
+.activeAlerts{
   width: 100%;
-  justify-content: space-between;
+  height: calc(100% - 270px);
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 0px;
+  margin-top: 10px;
+  padding-bottom: 10px;
 }
-
+.activeAlerts h1{
+  width: 100%;
+  height: 60px;
+  text-align: left;
+  font-size: 25px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+.activeAlertWrapper{
+  width: 100%;
+  height: calc(100% - 61px);
+  overflow: scroll;
+}
+.activeAlert{
+  width: calc(100% - 20px);
+  height: auto;
+  margin-top: 10px;
+  border: 2px solid #d3d3d3;
+  border-radius: 8px;
+  display: flex;
+  justify-content:left;
+}
+.activeAlert .redBox{
+  width: 30px;
+  margin: 0px;
+  margin-top: 3px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: red;
+  border-radius: 8px;
+}
+.detailsHeader{
+  width: 100px;
+  margin: 0px;
+}
+.detailsHeader h3{
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 2px;
+  margin-top: 3px;
+}
+.detailsContent{
+  width: calc(100% - 400px);
+  margin: 0px;
+}
+.detailsContent p{
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #d3d3d3;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+.detailsAddress{
+  height: 70px;
+}
 /* ----------------- Search ----------------- */
 
 .mapWrapper{
